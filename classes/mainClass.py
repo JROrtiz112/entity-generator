@@ -1,6 +1,3 @@
-from classes.attribute import Attribute
-
-
 from .attribute import Attribute
 
 class Class:
@@ -9,7 +6,7 @@ class Class:
 
     def __init__(self, name):
         self.name = name
-        self.list = []
+        self.attributes = []
 
     def append(self, item):
         attribute = Attribute(item[0], item[1], item[2])
